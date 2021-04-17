@@ -1,307 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"
 <head>
-<title>Homepage - Mental Health</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-
-* {
-  box-sizing: border-box;
-}
-
-/* Style the body */
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-}
-
-/* Header/logo Title */
-.header {
-  padding: 50px;
-  text-align: center;
-  background: green;
-  background-size: cover;
-  color: white;
-}
-
-/* Increase the font size of the heading */
-.header h1 {
-  font-size: 40px;
-}
-
-/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-}
-
-/* Style the navigation bar links */
-.navbar a {
-  float: center;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
-}
-
-
-/* Right-aligned link */
-.navbar a.right {
-  float: right;
-}
-
-a {
-  color: black;
-}
-
-.side a.active {
-  color: green  ;
-}
-
-.navbar a.active {
-  background-color: #666;
-  color: white;
-}
-
-/* Column container */
-.row {  
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-}
-
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-.side {
-  -ms-flex: 30%; /* IE10 */
-  flex: 30%;
-  background-color: #f1f1f1;
-  padding: 20px;
-}
-
-/* Main column */
-.main {   
-  -ms-flex: 70%; /* IE10 */
-  flex: 70%;
-  background-color: white;
-  padding: 20px;
-}
-
-.box {
-  background-color: white;
-  width: 100%;
-  padding: 20px;
-}
-
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-}
-
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  .row {   
-    flex-direction: column;
-  }
-}
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .navbar a {
-    float: none;
-    width: 100%;
-  }
-}
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-.column {
-  float: left;
-}
-
-.left {
-  width: 25%;
-}
-
-.right {
-  width: 75%;
-  align-items: center;
-  justify-items: center;
-}
-
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
-
-.navigation {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  overflow: hidden;
-  background-color: #333;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-}
-
-
-.navigation li {
-  float: right;
-}
-
-.navigation li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.navigation li a:hover:not(.active) {
-  background-color: #111;
-}
-
-.navigation .active {
-  background-color: #4CAF50;
-}
-
-.row .column a{
-	display:inline-block;
-	margin-top:20px;
-	padding:8px 20px;
-	background:#017143;
-	color:#fff;
-	border-radius:40px;
-	font-weight:500;
-	letter-spacing:1px;
-	text-decoration:none;
-}
-
-</style>
+	<meta charset="UTF-8">
+	<!--IMPORTANT NOTE:reference:CSS Responsive on W3SCHOOL 
+	Setting a Viewport..
+	HTML5 introduced a method to let web designers take control over their viewport, through <meta> tag.
+	This <meta> .... gives the browser instructions on how to control the page's dimensions and scaling.
+	width=device-width : sets the width of the page to follow the screen-width of the device.
+	initial-scale=1.0 : sets the initial zoom level when the page is first loaded by the browser. 
+	-->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Mental Health</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-	<div class="header">
-	  <h1>Healing</h1>
-	</div>
-
-	<ul class="navigation">
-		<li><a class="active" href="#home">Home</a></li>
-		<li><a href="https://irdnabtrisyia.github.io/OpenSourceProject/TypesOfMentalHealth">Type</a></li>
-		<li><a href="#howtolookafteryourmentalhealth">Precaution</a></li>
-		<li><a href="#factoraffecting">Factor</a></li>
-		<li><a href="#signs">Sign</a></li>
-		<li><a href="#whyisitimportant">Importance</a></li>
-		<li><a href="#contact">Contact</a></li>
-	</ul>
-	
-	
-
-	<div class="row">
-		<!-- Slideshow container -->
-		<div class="column left">
-		<br>
-			<center> <img src="logo.png" width= "50%"></center>
-			<br><br>
-				<div class="slideshow-container">
-				<center>
-					<div class="mySlides fade">
-						<img src="myths2.png">
-					</div>
-
-					<div class="mySlides fade">
-						<img src="myths3.png">
-					</div>
-
-					<div class="mySlides fade">
-						<img src="myths4.png">
-					</div>
-				</center>
-				</div>
-			</div>
-		<div class="column right">
+	<section>
+		<div class="circle"></div>
+		<header>
+			<a href="#"><img src="logo3.png" class="logo" width="200" height="200"></a>
+			
+			<div class="toggle" onclick="toggleMenu();"></div>
+			<ul class="navigation">
+				<li><a href="#home">Home</a></li>
+				<li><a href="https://irdnabtrisyia.github.io/OpenSourceProject/Home">Type</a></li>
+				<li><a href="#howtolookafteryourmentalhealth">Precaution</a></li>
+				<li><a href="#factoraffecting">Factor</a></li>
+				<li><a href="#signs">Sign</a></li>
+				<li><a href="https://www.youtube.com/embed/OGZjYnZg4Cs">Importance</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</header>
+		<!--
+		<section id="home">Home</section>
+		<section id="menu">Menu</section>
+		<section id="what 's New">What 's New</section>
+		<section id="contact">Contact</section>
+		
+		-->
+		
+		
+		
+		
+		
+		
+		<div class="content">
+			<div class="textBox">
 				<h2>It's not bad day<br><span>Get to Know your Mental Health</span></h2>
 				<p>Online Screening is one of the quickest and easiest ways to determine whether you are experiencing symptoms of a mental health condition.</p>
 				<a href="https://screening.mhanational.org/screening-tools/">Take The Test</a>
-
-		<hr>
-		
-			<h2><span>Stigma and Myths</span></h2>
-			<p>Sadly, there is still a significant stigma attached to mental health conditions, with much of this relying on old-fashioned thinking and outdated assumptions</p>
-			<a href="#">Learn More</a>
-			
-		<hr>
-			<h2><span>The Importance of Mental Health</span></h2>
-			<iframe width="900" height="506" src="https://www.youtube.com/embed/OGZjYnZg4Cs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
-			  
-		
+		<br>
+		<br>
+		<div class="textBox">
+				<h2><span>Stigma and Myths</span></h2>
+				<br>
+				<p>Sadly, there is still a significant stigma attached to mental health conditions, with much of this relying on old-fashioned thinking and outdated assumptions</p>
+				<a href="#">Learn More</a>
+		</div>
+		<div class="imgBox">
+			<img src="stigma.png" class="starbucks">
+		</div>
 	</div>
-
-
-<script type="text/javascript">
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 10000); // Change image every 2 seconds
-}
-</script>
-
-<div class="footer">
-	<h2>		
-		<a href="#"><img src="facebook.png"></a></li>
-		<a href="#"><img src="twitter.png"></a></li>
-		<a href="#"><img src="instagram.png"></a></li>
-	</h2>
-</div>
-
+	<ul class="thumb">
+		<li><img src="thumb4.png" onclick="imgSlider('myths2.png');changeCircleColor('#017143')"></li>
+		<li><img src="thumb4.png" onclick="imgSlider('myths3.png');changeCircleColor('#eb7495')"></li>
+		<li><img src="thumb4.png" onclick="imgSlider('myths4.png');changeCircleColor('#d752b1')"></li>
+	</ul>
+	<ul class="sci">
+		<li><a href="#"><img src="facebook.png"></a></li>
+		<li><a href="#"><img src="twitter.png"></a></li>
+		<li><a href="#"><img src="instagram.png"></a></li>
+	</ul>
+	</section>
+	
+	<script type="text/javascript">
+		function imgSlider(anything){
+			document.querySelector('.starbucks').src=anything;
+		}
+		
+		function changeCircleColor(color){
+			const circle=document.querySelector('.circle');
+			circle.style.background=color;	
+		}
+		
+		function toggleMenu(){
+			var menuToggle=document.querySelector('.toggle');
+			var navigation=document.querySelector('.navigation')
+			menuToggle.classList.toggle('active')
+			navigation.classList.toggle('active')
+		}
+	</script>
+	
 </body>
 </html>
