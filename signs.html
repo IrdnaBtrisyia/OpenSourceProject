@@ -126,6 +126,39 @@ a:active {
     width: 100%;
   }
 }
+	
+.navigation {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+.navigation li {
+  float: right;
+}
+
+.navigation li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navigation li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.navigation .active {
+  background-color: #4CAF50;
+}
+	
 </style>
 </head>
 <body>
@@ -135,8 +168,13 @@ a:active {
 </div>
 
 <div class="navbar">
-  <a href="#" class="active">Home</a>
-  <a href="#" class="active right">Next</a>
+<li><a href="https://irdnabtrisyia.github.io/OpenSourceProject/index">Home</a></li>
+				<li><a href="https://irdnabtrisyia.github.io/OpenSourceProject/TypesOfMentalHealth">Type</a></li>
+				<li><a href="https://irdnabtrisyia.github.io/OpenSourceProject/mentalLookAfter">Precaution</a></li>
+				<li><a href="https://irdnabtrisyia.github.io/OpenSourceProject/factors">Factor</a></li>
+				<li><a href="https://irdnabtrisyia.github.io/OpenSourceProject/signs">Sign</a></li>
+				<li><a class="active" href="https://irdnabtrisyia.github.io/OpenSourceProject/Importance">Importance</a></li>
+				<li><a href="#contact">Contact</a></li>
 </div>
 
   <div class="side">
