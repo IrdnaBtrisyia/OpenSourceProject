@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+	<title> Contact Help Form </title>
+	
+<style>
+body {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background: url(https://media.bizj.us/view/img/11636312/gettyimages-1168894271*1200xx4861-2748-0-1054.jpg) ;
+	background-size: cover;
+	font-family:  Arial, Helvetica, sans-serif;
+	color: white;
+	}
+	
+.help{
+	margin-top: 100px;
+	color: #fff;
+	text-transform: uppercase;
+	transition: all 4s ease-in-out;
+	}
+
+.help h1{
+	font-size: 32px;
+	line-height:10px;
+	}
+	
+.help h2{
+	font-size: 16x;
+	}
+	
+form {
+	margin-top: 50px;
+	transition: all 4s ease-in-out;
+	}
+	
+.help-me{
+	width: 600px;
+	background: transparent;
+	border: none;
+	outline: black;
+	border-bottom: 1px solid gray;
+	color:#fff;
+	font-size: 18px;
+	margin-bottom: 16px;
+	}
+	
+textarea .help-me{
+	width: 600px;
+	background: transparent;
+	border: none;
+	outline: black;
+	border-bottom: 1px solid gray;
+	color:#fff;
+	font-size: 18px;
+	margin-bottom: 16px;
+	}
+	
+input{
+	height:45px;
+	}
+	
+form .submit{
+	background:#ff5722;
+	border-color: transparent;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+	height: 50px;
+	margin-top: 20px;
+	}
+	
+	
+</style>
+</head>
+
+
+<body>
+
+	<div class = "help">
+		<h1> Hello </h1>
+		<h2> We are always here to be with you! </h2>
+	</div>
+	
+	<div class="help-form">
+		<form id="help-form" method="post" action="Help.php">
+		
+			<input name="name" type="text" class="help-me" placeholder="Your name" required>
+			<br>
+			
+			<input name="email" type="email" class="help-me" placeholder="Your email" required>
+			<br>
+			<h2> How can we help you? <h2>
+			<textarea name="message" class = "help-me" required> </textarea>
+			<br>
+				
+			<input type="submit" class="help-me submit" value="Send" >
+		</form>
+	</div>
+	
+</body>
+</html>
