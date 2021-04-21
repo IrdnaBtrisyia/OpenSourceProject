@@ -1,4 +1,30 @@
 <HTML>
+<head>
+<style>
+
+body {
+	margin: 0;
+	padding: 50px;
+	text-align: center;
+	background: url(https://media.bizj.us/view/img/11636312/gettyimages-1168894271*1200xx4861-2748-0-1054.jpg) ;
+	background-size: cover;
+	font-family:  Arial, Helvetica, sans-serif;
+	color: white;
+	}
+	
+a{
+	border-color: transparent;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+	height: 50px;
+	margin-top: 20px;
+	}
+	
+	
+</style>
+</head>
 <body>
 
 <?php
@@ -18,6 +44,10 @@ Print "$input";
 
 </p>
 <p style="text-align: center;">Your message has been sent. We will be with you in a sec. </p>
+</div>
+
+<div>
+	<a href="https://irdnabtrisyia.github.io/OpenSourceProject/index">Home</a></li>
 </div>
 
 
